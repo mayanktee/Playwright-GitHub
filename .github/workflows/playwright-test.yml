@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Clear Playwright Cache
+        run: npx playwright install
+            
       - name: Install Dependencies
         run: npm install
 
