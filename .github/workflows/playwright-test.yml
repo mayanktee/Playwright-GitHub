@@ -32,3 +32,12 @@ jobs:
       
       - name: Run Playwright API Tests
         run: npm run apiSuite
+       
+      - name: Generate playwright test report
+        run: npm run generate-report
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: playwight-report
+          path: playwight-report
