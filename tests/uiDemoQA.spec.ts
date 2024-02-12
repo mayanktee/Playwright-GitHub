@@ -9,7 +9,7 @@ var password =''
 
 // +++++++++++++++++++++++ Test Methods +++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
 
-test.beforeAll('Before All : A create user UID & Password by API ', async ({page}) => {
+test.beforeEach('Before All : A create user UID & Password by API ', async ({page}) => {
     await APIValidation.userRegister(page);
     userName = APIValidation.randomName
     password= APIValidation.UserPassword
