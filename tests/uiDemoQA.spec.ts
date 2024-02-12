@@ -25,7 +25,6 @@ test('Validate the landing on DemoQA HomePage',async({page}) => {
     await page.getByRole('button', { name: 'Login' }).click();
 
     const uIDAfterLogin = await page.locator('#userName-value').textContent();
-    
     expect(uIDAfterLogin).toBe(userName);
     
 })

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test tests/uiDemoQA.spec.ts"
+    "test": "npx playwright test uiDemoQA.spec.ts"
   },
   "author": "",
   "license": "ISC",
