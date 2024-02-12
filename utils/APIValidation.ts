@@ -50,7 +50,6 @@ export class APIValidation {
   }
 
   private static async authorizationWithToken(page: Page, expect: any) {
-    console.log('my Token ::: ' + APIValidation.token);
     const response = await page.request.post(
       'https://demoqa.com/Account/v1/Authorized',
       {
