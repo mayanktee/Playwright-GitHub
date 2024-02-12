@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx playwright test",
     "uiSuite": "npx playwright test uiDemoQA.spec.ts",
     "apiSuite": "npx playwright test apiDemoQA.spec.ts",
     "generate-report": "playwright test --reporter=list,json --output=test-results"

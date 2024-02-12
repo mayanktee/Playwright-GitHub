@@ -26,18 +26,12 @@ jobs:
 
       - name: Install Playwright Dependencies
         run: npx playwright install
-
-      - name: Run Playwright UI Tests
-        run: npm run uiSuite
-      
-      - name: Run Playwright API Tests
-        run: npm run apiSuite
        
       - name: Generate playwright test report
-        run: npm run generate-report
+        run: npx playwright tests generate-report
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: test-results
-          path: test-results
+          name: playwright-report
+          path: playwright-report/ci-reports
