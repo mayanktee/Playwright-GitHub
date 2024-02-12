@@ -39,5 +39,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: playwight-report
-          path: playwight-report
+          name: test-report
+          path: test-report/*
