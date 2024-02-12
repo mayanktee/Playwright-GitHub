@@ -11,10 +11,8 @@ const random = Math.floor((Math.random() * 1000) + 1);
 
 const randomName = UserName+random
 
-console.log('My username : '+randomName)
+console.log('The username : '+randomName)
 const basicAuthHeader = 'Basic '+ btoa(randomName+':'+UserPassword)
-
-console.log('My basic token  : '+basicAuthHeader)
 
 export const reqData = {
   "userName": randomName,
