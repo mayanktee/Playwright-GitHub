@@ -57,9 +57,9 @@ jobs:
       - name: Debug Docker Image List
         run: |
             docker images
-  
-            - name: Set up Docker Buildx
-            uses: docker/setup-buildx-action@v1
+            
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
           
       - name: Build and push Multi-Arch Docker image
         uses: docker/build-push-action@v2
