@@ -45,9 +45,22 @@ jobs:
           name: test-report
           path: playwright-report
 
+      - name: Debug Docker Build Context
+        run: |
+            ls -al  # List files in the current directory
+            cat Dockerfile  # Display the contents of the Dockerfile
+  
+      - name: Debug Docker Build
+        run: |
+            docker build -t mayank9tee/playwright-github-mt:latest .
+        
+      - name: Debug Docker Image List
+        run: |
+            docker images
+  
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
-          push: true
-          tags: mayank9tee/mt-playwright-github:latest  # Corrected Docker image name
+            context: .
+            push: true
+            tags: mayank9tee/playwright-github-mt:latest
