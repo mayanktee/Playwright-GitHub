@@ -50,4 +50,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mayank9tee/playwright-github:latest  # Corrected Docker image name
+          tags: mayank9tee/mt-playwright-github:latest  # Corrected Docker image name
