@@ -20,7 +20,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1.11.0
+        uses: docker/login-action@v1.12.0  # Updated to a newer version
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
@@ -50,4 +50,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mayank9tee/Playwright-GitHub:latest
+          tags: mayank9tee/playwright-github:latest  # Corrected Docker image name
