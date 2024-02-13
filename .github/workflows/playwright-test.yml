@@ -66,6 +66,6 @@ jobs:
         with:
               context: .
               push: true
-              tags: mayank9tee/playwright-github:latest
+              tags: mayank9tee/playwright-github-mt:latest
               platforms: linux/amd64,linux/arm64/v8  # Add other platforms if needed
           
