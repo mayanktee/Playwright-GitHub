@@ -22,8 +22,8 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1.11.0
         with:
-          username: ${{ secrets.mayank9tee }}
-          password: ${{ secrets.dckr_pat_OUhpVUcFEJF_c9RpPWpwOguSDRc }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
